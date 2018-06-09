@@ -1,4 +1,12 @@
-/* 手機版CSS */
+/*body::after {
+	content: "";
+	position: fixed;
+	background-color: rgba(136,136,136,0.67);
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+} 手機版CSS */
 @import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
 
 html
@@ -17,15 +25,16 @@ body
 	background-attachment: fixed;
 }
 
-body::after {
+/*body::after {
 	content: "";
 	position: fixed;
-	background-color: rgba(136,136,136,0.67);
+	background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAMklEQVQoU2NkwAT/GRgYGNGE/2MIYFMEEkNWiNUkmEaYQryKQM4AKSSoCKYQ3TtD1jMA7usUCY8Rnv4AAAAASUVORK5CYII=);
 	top: 0;
 	left: 0;
 	height: 100%;
 	width: 100%;
-}
+	opacity: 0.6;
+}*/
 
 .logo
 {
@@ -103,6 +112,7 @@ header
 	left: 3vw;
 	top: 3vw;
 	width: 6vw;
+	z-index: 2;
 }
 
 .info li:last-child
@@ -146,6 +156,7 @@ header
 	top: 0;
 	color: white;
 	padding: 5rem;
+	z-index: 1;
 }
 /*選單*/
 .nav>li>span {
