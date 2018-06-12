@@ -202,3 +202,64 @@ display: none;
 .nav>li:nth-child(2) i { /*隱藏物件*/
 		display: none;
 }
+
+.navouter .fa-times {
+	display: none;
+}
+
+/* 額外的東西 */
+.othereles li {
+	width: 12rem;
+	height: 3rem;
+	padding: 1rem 0rem 0rem 1rem;
+	margin: 1rem 0;
+	font-size: 1.5rem;
+	color: white;
+	position: relative;
+	left: 9.4rem;
+	transform: all 0.5s;
+
+}
+.othereles li:hover {
+	left: 0rem;
+	cursor: wait;
+}
+.othereles li:first-child {
+	background-color:rgba(95,100,43,0.50)
+}
+.othereles li:nth-child(2) {
+	background-color:rgba(146,102,171,0.50)
+}
+.othereles li:last-child {
+	background-color: rgba(40,88,172,0.48)
+}
+.othereles img {
+	margin-right: 1rem
+}
+.othereles {
+	position: fixed;
+	top: 5vh;
+	right: 0;
+}
+.newscont {
+		width: 40%;
+		margin: 1rem 0;
+}
+.newscont li{
+			width: 40%;
+	display: flex;
+	color: white;
+	margin: 1rem;
+	background-color: rgba(40,88,172,0.48);
+	padding: 1rem 0rem 1rem 1rem;
+	position: fixed;
+	top: 0;
+	right: -100vw;
+}
+.newscont li img {
+	width: 100%;
+}
+.newscont div {
+	width: 40%;
+	margin-right: 1rem;
+}

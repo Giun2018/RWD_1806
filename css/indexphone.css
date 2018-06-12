@@ -157,6 +157,7 @@ header
 	color: white;
 	padding: 5rem;
 	z-index: 1;
+	display: flex;
 }
 /*選單*/
 .nav>li>span {
@@ -170,6 +171,7 @@ header
 	margin-bottom: 1%;
 	padding-left: 0%;
 	padding-top: 5%;
+	
 }
 .nav>li:nth-child(2) ul>li>a {
 	color: white;
@@ -245,5 +247,17 @@ close {
 }
 /*隱藏式選單*/
 .navouter {
+	display: none;
+	z-index: 2;
+	position: relative;
+}
+
+.fa-times {
+	color: white;
+	font-size: 5rem;
+	top: 3vw;
+	left: 3vw;
+}
+.othereles {
 	display: none;
 }
