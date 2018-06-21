@@ -7,7 +7,7 @@
 }
 body
 {
-	background-image: url(../images/bg.jpg);
+background-image: url(../images/bg.jpg);
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size:cover;
@@ -218,7 +218,6 @@ display: none;
 	position: relative;
 	left: 9.4rem;
 	transform: all 0.5s;
-
 }
 .othereles li:hover {
 	left: 0rem;
@@ -253,8 +252,8 @@ display: none;
 	background-color: rgba(40,88,172,0.48);
 	padding: 1rem 0rem 1rem 1rem;
 	position: fixed;
-	top: 0;
 	right: -100vw;
+	bottom: 30vw;
 }
 .newscont li img {
 	width: 100%;
@@ -262,4 +261,39 @@ display: none;
 .newscont div {
 	width: 40%;
 	margin-right: 1rem;
+}
+
+.newscontent li i.close
+{
+	color: #000000;
+	font-size: 2rem;
+	position: fixed;
+	left: 0;
+	top: -2rem;
+	cursor: pointer;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+.newscontent h1
+{
+	font-size: 1.5rem;
+	margin-bottom: 0.8rem;
+}
+
+.newscontent p
+{
+	line-height: 1.6rem;
+}
+
+
+fullBackground {
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
