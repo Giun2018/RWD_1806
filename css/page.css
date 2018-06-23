@@ -1,0 +1,14 @@
+/*something will write here*/
+@media (min-width: 992px) {
+	nav {
+		hight:20rem;
+	}
+	.navbar-brand {cursor: default;}
+	.carousel-inner a {cursor: default;}
+	
+}
+@media (max-width: 992px) {
+	nav {
+		text-align: center;
+	}
+}
