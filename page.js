@@ -23,25 +23,36 @@ $('.carousel').carousel({
 //	   }
 //});
 
-//$(document).ready(function(){
-//
-//    //Check to see if the window is top if not then display button
-//    $(window).scroll(function(){
-//        if ($(this).scrollTop() > 100) {
-//            $('.scrollToTop').fadeIn();
-//        } else {
-//            $('.scrollToTop').fadeOut();
-//        }
-//    });
-//
-//    //Click event to scroll to top
-//    $('.scrollToTop').click(function(){
-//        $('html, body').animate({scrollTop : 0},800);
-//        return false;
-//    });
-//
-//});
+$(document).ready(function(){
 
-$('.ST').click(function(){
-	$('html, body').animate({screenTop:0});
+    //Check to see if the window is top if not then display button
+    $(window).scroll(function(){
+        if ($(this).scrollTop() > 100) {
+            $('.scrollToTop').fadeIn();
+        } else {
+            $('.scrollToTop').fadeOut();
+        }
+    });
+
+    //Click event to scroll to top
+    $('.scrollToTop').click(function(){
+        $('html, body').animate({scrollTop : 0},800);
+        return false;
+    });
+
+});
+
+//$('.ST').click(function(){
+//	$('html, body').animate({screenTop:0});
+//});
+//$().(function(){
+//	if ($('.totop').fadeIn((this).()>100))
+//	else ($('totop').fadeOut(this.()<100));
+//});
+$(function(){ //文字提示
+  $(".tooltip").tooltip(options)
+  });
+$(".nav-link").click(function(){
+	var navlink=$(this).attr("href");
+	$("html").stop().animat({scrollTop:$(navlink).offset().top-150});
 });
