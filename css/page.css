@@ -32,3 +32,29 @@
 .card img {
 	cursor: pointer;
 }
+::selection {
+    background-color: chocolate;
+    color: white;
+}
+.lest-post {
+    min-height: 50vh;
+    background-image: url(../3.jpg);
+    background-size: cover;
+    background-position: center bottom;
+}
+.info-bg1 {
+    background-image: url(../images/info-bg1.jpg);
+    background-size: cover;
+    background-position: center bottom;
+}
+.info-bg2 {
+    background-image: url(../images/info-bg2.jpg);
+    background-size: cover;
+    background-position: center bottom;
+}
+hr {
+    background-color: white;
+}
+.filtr-container>img {
+    margin-top: 2rem;
+}
