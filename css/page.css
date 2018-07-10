@@ -29,7 +29,7 @@
 .disabled {
 	cursor: default;
 }
-.card img {
+.card>img {
 	cursor: pointer;
 }
 ::selection {

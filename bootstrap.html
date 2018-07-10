@@ -106,11 +106,13 @@
 			  </div>
 			</div></div>
 			  <div class="col-lg-3 col-md-6"><div class="card shadow mb-4">
-			  <img class="card-img-top" src="images/card-2.jpg" alt="Card image cap" data-cds="#cd02" class="btn btn-warning" data-toggle="modal" data-target="#exampleModal2">
+               <a href="https://www.youtube.com/watch?v=-Of_yz-4iXs" class="video">
+			  <img class="card-img-top" src="images/card-2.jpg" alt="Card image cap">
+                  </a>
 			  <div class="card-body">
-				<h5 class="card-title">融入生活中的藝術</h5>
-				<p class="card-text">近幾年跨時代的到來，營造了伴隨著多媒體時代的來臨，多媒體的藝術已經成為生活中的一部分。</p>
-				<a href="#cd01" class="btn btn-warning" data-toggle="modal" data-target="#exampleModal2">尚未購買</a>
+				<h5 class="card-title">遊戲帶來的藝術文化</h5>
+				<p class="card-text">近幾年跨時代的到來，許多遊戲已慢慢開始被經營，藉由著遊戲將藝術的精神帶給現代每個玩家...</p>
+				<a href="#cd01" class="btn btn-warning" data-toggle="modal" data-target="#exampleModal2">免費試聽</a>
 			  </div>
 			</div></div>
 			  <div class="col-lg-3 col-md-6"><div class="card shadow mb-4">
@@ -121,7 +123,7 @@
 				<a href="#cd03" class="btn btn-warning" class="btn btn-warning" data-toggle="modal" data-target="#exampleModal2">尚未購買</a>
 			  </div>
 			</div></div>
-			  <div class="col-lg-3 col-md-6"><div class="card shadow-sm">
+			  <div class="col-lg-3 col-md-6 parent-container"><div class="card shadow-sm">
 			  <img class="card-img-top" src="images/card-4.jpg" alt="Card image cap" data-cds="#cd04">
 			  <div class="card-body disabled">
 				<h5 class="card-title">新的季票即將推出</h5>
@@ -223,7 +225,7 @@
                   <button type="button" class="btn btn-secondary" data-filter="project">專案</button>
                   <button type="button" class="btn btn-secondary" data-filter="vlog">旅遊</button>
                   <button type="button" class="btn btn-secondary" data-filter="item">產品</button>
-                  <button type="button" class="btn btn-secondary" data-filter="doing">ING</button>
+                  <button type="button" class="btn btn-secondary" data-filter="doing">正在</button>
                 </div>
               <div class="row">
               <div class="filtr-container parent-container">
@@ -286,13 +288,18 @@
 		  <div class="container-fluid footer bg-primary text-light py-lg-5 py-4 px-md-5 px-3">
 			  <div class="row">
 				  <div class="col-lg-4 col-sm-12">
-					  <h2>詳細資訊</h2>
+					  <h2><i class="far fa-file-alt fa-spin mx-2 fa-xs" style="color: white"></i>詳細資訊</h2>
 					  <a href="index.html">回到首頁</a><br>
 					  <a href="bootstrap.html" download>下載此頁</a><br>
 					  <a href="https://www.gmail.com/">聯絡我們</a>
 					  </div>
-				  <div class="col-lg-4 col-sm-12">聯絡地址</div>
-				  <div class="col-lg-4 col-sm-12">LOGO</div>
+				  <div class="col-lg-4 col-sm-12">
+                      <h2><i class="fas fa-briefcase fa-spin mx-2 fa-xs" style="color: white"></i>工作室</h2>
+                      <p><a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4415.2530657105235!2d2.423737022772703!3d48.85200926099219!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e6729dac8cc02b%3A0xe2e6e41c0e29c205!2sUbisoft+Paris+Studio!5e0!3m2!1szh-TW!2stw!4v1531227726682" class="video">前往實體工作室</a></p>
+                      <iframe src="https://snazzymaps.com/embed/83760" width="100%" height="200px" style="border:none;"></iframe>
+                      <!--AIzaSyBtBKhLqW5eEF2-Rr8PH6uf50g6aFRU-dI-->
+                  </div>
+				  <div class="col-lg-4 col-sm-12">商標(未放置)</div>
 			  </div>
 		  </div>
 	  </footer>
@@ -336,10 +343,10 @@
 		  <div class="modal-body">
 			  <div class="accordion" id="accordionExample">
 				  <div class="card">
-					<div class="card-header" id="headingOne">
+					<div class="card-header" id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
 					  <h5 class="mb-0">
 						<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-						  測試影片介面
+						  第一課：在這之前
 						</button>
 					  </h5>
 					</div>
@@ -350,18 +357,21 @@
 						<video controls class="w-100">
 							<source src="video/demo.mp4" type="video/avi">
 						</video>
+
+                        舊的影片網址：https://www.youtube.com/embed/rrT6v5sOwJg?start=290
 -->
-						<iframe class="w-100" height="200" src="https://www.youtube.com/embed/rrT6v5sOwJg?start=290" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-						<h5 class="mt-2">影片介面</h5>
-						<p>這是一個模板適用於放置影片為開頭的介面模組。</p>
+                          <video class="w-100 my-4" loop="" muted="" preload="metadata" tabindex="0">
+<source data-src="https://storage.googleapis.com/spec-host/mio-material-staging%2Fassets%2F1MvJxcu1kd5TFR6c5IBhxjLueQzSZvVQz%2Fm2-manifesto.mp4" src="https://storage.googleapis.com/spec-host/mio-material-staging%2Fassets%2F1MvJxcu1kd5TFR6c5IBhxjLueQzSZvVQz%2Fm2-manifesto.mp4" type="video/mp4"> </video>
+						<h5 class="mt-2">如果要做，要怎麼做？</h5>
+						<p>希望你們可以了解這些內容。</p>
 					  </div>
 					</div>
 				  </div>
 				  <div class="card">
-					<div class="card-header" id="headingTwo">
+					<div class="card-header" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
 					  <h5 class="mb-0">
 						<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-						  測試圖片介面
+						  第二課：一些內容
 						</button>
 					  </h5>
 					</div>
@@ -373,24 +383,31 @@
 					</div>
 				  </div>
 				  <div class="card">
-					<div class="card-header" id="headingThree">
+					<div class="card-header" id="headingThree" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
 					  <h5 class="mb-0">
 						<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-						  純文字介面
+						  第三課：範例演示
 						</button>
 					  </h5>
 					</div>
 					<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
 					  <div class="card-body">
-						想想那純淨的...文字。
-						Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+						<h3>讓我們來範例一下</h3>
+						材料研究展示了Material Theming和組件的靈活性，以創建富有表現力和獨特的應用程序。
+                        <video class="w-100 my-4" loop="" muted="" preload="metadata" tabindex="0" autoplay>
+<source data-src="https://material.io/design/assets/1s1rlU7DFBy4VtW3hWuIRWULBY2yrPUX_/casestudy-loop.mp4" src="https://material.io/design/assets/1s1rlU7DFBy4VtW3hWuIRWULBY2yrPUX_/casestudy-loop.mp4" type="video/mp4"> </video>
+                        使用材料研究激發您自己採用材料主題和組件。
+
+這些研究通過檢查一組虛構的應用程序來探索現實世界的設計和產品限制，每個應用程序都設計有獨特的屬性和用例。每項研究都說明瞭如何制定多個設計決策，以及不同品牌如何在各種產品類別中表達自己，包括零售，音樂，生產力，財務，按需服務和教育。
+
+專門的頁面解釋了每種材料研究設計，組件選擇以及每種研究如何使用材料主題背後的基本原理。
 					  </div>
 					</div>
 				  </div>
 </div>
 		  </div>
 			<div class="modal-footer">
-				<a href="index.html" class="btn btn-dark" download>下載全部</a>
+				<a href="#" class="btn btn-dark" download>下載全部</a>
 				<button href="" class="btn btn-primary" aria-label="Close" data-dismiss="modal">關閉</button>
 			</div>
 		</div>
