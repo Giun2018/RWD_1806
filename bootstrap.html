@@ -515,14 +515,14 @@ If you are hacker, you can stay here.
         </button>
       </div>
 		  <div class="modal-body">
-            <form action="welcome.php">
+            <form action="email.php" method="post">
                 <div class="form-group">
                     <label for="exampleFormControlInput1">電子郵件</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="yourname@example.com">
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="yourname@example.com" name="email">
                 </div>
                 <div class="form-group">
                     <label for="exampleFormControlSelect1">技能類型</label>
-                    <select class="form-control" id="exampleFormControlSelect1">
+                    <select class="form-control" id="exampleFormControlSelect1" name="doing">
                       <option>程式設計</option>
                       <option>美術概觀</option>
                       <option>模型套版</option>
@@ -532,22 +532,24 @@ If you are hacker, you can stay here.
                   </div>
                     <div class="form-group">
                         <label for="exampleFormControlTextarea1">所以、你想表達什麼？</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="msg"></textarea>
                     </div>
                   <div class="form-group">
                     <label for="exampleFormControlFile1">上傳附件</label>
                     <input type="file" class="form-control-file" id="exampleFormControlFile1">
                   </div>
                     <div class="form-group">
-                      <input class="form-control form-control-lg" type="text" placeholder="我們該如何稱呼您？">  
+                      <input class="form-control form-control-lg" type="text" placeholder="我們該如何稱呼您？" name="username">  
                     </div>
                 <p>輸入這些就夠了，非常感謝您。由於人力不足，我們會需要一點時間來處理這些表單，請務必耐心等候。
                 </p>
+                <p>在送出之前，請確認您同意我們的「服務條款」與「隱私政策」</p>
             </form>
 		  </div>
 		<div class="modal-footer">
-				<p>在送出之前，請確認您同意我們的「服務條款」與「隱私政策」</p>
-	<button href="" class="btn btn-primary" aria-label="Close" data-dismiss="modal">撤銷</button>
+            <p>
+            <button type="submit" class="btn btn-primary">送出</button>
+	<!--button href="" class="btn btn-primary" aria-label="Close" data-dismiss="modal">撤銷</button--></p>
 			</div>
 		</div>
 	  </div>
